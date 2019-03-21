@@ -1,0 +1,402 @@
+body, html{
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    width: 100%;
+    box-shadow: 0 8px 6px -6px rgb(114, 112, 112);
+    height: 60px;
+    z-index: 2;
+    background-color:#fff;
+    font-family: "open sans";
+    position:fixed;
+
+}
+.logo{
+    float: left;
+}
+ul{
+padding:0;
+ margin:0;
+ list-style-type:none;
+}
+
+li{
+    margin-left:2px;
+}
+
+ul li a{
+display:block;
+ float:right; 
+ text-decoration:none;
+ text-align:center;
+color:#ff4481;
+ font-size: 16px;
+ text-transform: uppercase;
+ margin-right: 15px;
+ margin-top: 30px;
+
+}
+.logo img{
+	height: 50px;
+    width: 50px;
+   
+	
+
+}
+section #slider{
+    width: 100%;
+    height:100vh;
+    
+  
+}
+
+#slider_container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:5%;
+}
+#img_slide{
+    width:80%;
+    height: 60vh;
+    margin-top: 2%;
+    box-shadow: 10px 10px 79px 0px rgba(153,153,153,1);
+}
+
+#arrow-left{
+    position: absolute;
+    left: 10%;
+    top:50%;
+    cursor:pointer;
+}
+#arrow-right{
+    position: absolute;
+    right: 10%;
+    top:50%;
+    cursor:pointer;
+
+}
+#play{
+    position: absolute;
+    left:50%;
+    cursor:pointer;
+
+}
+
+#pause{
+    position: absolute;
+    left:50%;
+    cursor:pointer;
+
+}
+
+hr{
+    margin-top:7%;
+    width: 80%;
+    border: 2px solid #ff4481;
+}
+.container_map_input{
+    display: flex;
+    bottom: 2px;
+    position: relative;
+    margin-top:5%;
+    margin-bottom: 5%;
+}
+
+#map{
+	height: 500px;
+    width: 50%;
+    margin-top:5%;
+    margin-left: 5%;
+    z-index: 1;
+    
+	
+}
+
+#unavailable_station{
+    display: none;
+}
+
+
+#clock span{
+    
+    text-align: center;
+    font-size: 44px;
+    margin:0 1%;
+    color:#fff;
+    padding:10px;
+    width: 20%;
+    border-radius: 20px;
+    box-sizing: border-box; 
+ }
+ 
+ #clock span:nth-child(1){
+     background-color: #fa5559;
+ }
+ #clock span:nth-child(2){
+     background-color: #26c2b9;
+ }
+
+ 
+ clock:after{
+     content:"";
+     display:block;
+     clear:both;
+ }
+
+
+ @keyframes slide_left{
+	0%{
+		transform: translateX(-100%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+.pannel{
+	height: 500px;
+	width: 40%;
+    background-color: #5649cf;
+    border: 1px solid white;
+    margin: 5% 2%;
+    border-color: #5649cf;
+    text-align: center;
+    box-shadow: 10px 10px 7px 2px rgba(212,212,212,1);
+
+}
+
+.text_pannel{
+    margin-left: 20px;
+    color: rgb(221, 235, 235);
+    
+
+}
+#slider_container{
+    margin: auto;
+    text-align: center;
+    
+}
+#img_slide{
+    margin-top: 5%;
+    height: 70%;
+    width: 70%;
+
+}
+input{
+    border-radius: 15px;
+    text-align: center;
+    height: 30px;
+    background-color:#fff;
+    border:grey;
+}
+
+label{
+    width: 45px;
+
+}
+
+.pannel_animation{
+    animation: slide_left .7s ease-in;
+}
+.animation_left{
+    animation: slide_left .7s ease-in;
+}
+@keyframes slide_right{
+	0%{
+		transform: translateX(100%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+.animation_right{
+    animation: slide_right .7s ease-in;
+}
+
+.pannel h2{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+
+}
+
+button{
+	padding: 10px;
+	border-radius: 25px;
+    background-color: #fff;
+    border-color:#fff;
+	font-family: inconsolata;
+	font-size: 20px;
+    margin-top: 20px;
+    margin:auto;
+    margin-bottom:20px;
+    border: 1px solid grey;
+    text-transform: uppercase;
+    
+
+}
+#save_btn:hover{
+    color: rgb(33, 211, 107);
+    border-color:rgb(33, 211, 107);
+   
+}
+#btn_sign_to_book:hover{
+    color: rgb(33, 211, 107);
+    border-color:rgb(33, 211, 107);
+    }
+#erase_btn:hover{
+    color: rgb(243, 10, 60);
+    border-color:rgb(243, 10, 60);
+       
+    }
+#cancel_btn:hover{
+    color: rgb(243, 10, 60);
+    border-color:rgb(243, 10, 60);
+       
+    }
+@keyframes slide_left{
+	0%{
+		transform: translateX(-100%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+
+#reservation_box{
+   text-align: center;
+    background-color: #282e3a;
+    border-radius:25px;
+    width:70%;
+    margin: auto;
+    font-size: 24px;
+    margin-bottom:5%;
+    color:#fff;
+    display : none;
+    padding:2%;
+   
+}
+
+
+.pannel{
+    display: none;
+}
+#canvas{
+    border: 1px solid pink;
+    border-radius:15px;
+    background-color: #fff;
+    height: 100px;
+    width: 230px;
+    margin-left: 5px;
+ 
+}
+#units{
+    margin: auto;
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+  
+}
+#units p{
+   
+    text-align:center;
+   
+    color:#ddd;
+    text-transform:uppercase;
+    font-size: 12px;
+    letter-spacing: 7px;
+    text-shadow: 1px 1px 1px rgba(10,10,10,0.7);
+    display: block;
+    margin: auto;
+    margin-top:20px;
+    margin-right: 10%;
+    margin-left: 0;
+
+}
+
+#units >p:first-child{
+    margin-right: 0px;
+    margin-left: 12%;
+}
+
+#prevent_new_reservation{
+    display: none;
+}
+
+#canvas_container{
+    display: none;
+    float: left;
+}
+
+#canvas_btn{
+    float: right;
+    margin-left: 5px;
+}
+#cancel_box{
+    text-align: center;
+    background-color: #ff4481;
+    border-radius:25px;
+    width:70%;
+    margin: auto;
+    font-size: 24px;
+    margin-bottom:5%;
+    color:#fff;
+    display: none;
+}
+
+#expiration_box{
+    text-align: center;
+    background-color: #ff4481;
+    border-radius:25px;
+    width:70%;
+    margin: auto;
+    font-size: 24px;
+    margin-bottom:5%;
+    color:#fff;
+    display: none;
+}
+@media screen and (max-width: 600px){
+    #slider_container{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        
+    }
+    #img_slide{
+        width:100vw;
+        height: 30vh;
+        margin-top: 5%;
+    }
+    #arrow-left{
+        display: none;
+    }
+    #arrow-right{
+        display: none;
+    }
+    hr{
+       display: none;
+  
+} 
+.container_map_input{
+    display:block;
+    
+    
+}
+#pannel{
+    width:90%;
+    margin-right:5%;
+    margin-left:5%;
+    height:100vh;
+}
+#map{
+    width:90%;
+    margin-right:5%;
+    margin-left:5%;
+}
+#reservation{
+    margin-top:15%;
+    display:block;
+}
+}
